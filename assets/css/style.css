@@ -1,10 +1,10 @@
 :root{
-    --var-background:black;
-    --var-font-color: white;
-    --var-align-text:center;
+    --background:black;
+    --font-color: white;
+    --align-text:center;
 }
 body{
-    background-color: var(--var-background);
-    color: var(--var-font-color);
-    text-align: var(--var-align-text);
+    background-color: var(--background);
+    color: var(--font-color);
+    text-align: var(--align-text);
 }
