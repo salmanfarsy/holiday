@@ -3,6 +3,11 @@
     --font-color: white;
     --align-text:center;
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     background-color: var(--background);
     color: var(--font-color);
