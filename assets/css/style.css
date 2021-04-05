@@ -13,3 +13,17 @@ body{
     color: var(--font-color);
     text-align: var(--align-text);
 }
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    width: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+    color: var(--font-color)
+}
