@@ -2,6 +2,7 @@
     --background:black;
     --font-color: white;
     --align-text:center;
+    --padding:1em;
 }
 *{
     margin: 0;
@@ -26,4 +27,10 @@ ul{
 a{
     text-decoration: none;
     color: var(--font-color)
+}
+header{
+    background-image: url(../images/snowy-vin-Yv6C7JssT5M-unsplash.jpg);
+    padding-bottom: calc(var(--padding) * 25);
+    background-size: cover;
+    
 }
