@@ -3,6 +3,7 @@
     --font-color: white;
     --align-text:center;
     --padding:1em;
+    --font-size:15px;
 }
 *{
     margin: 0;
@@ -17,6 +18,8 @@ body{
 nav{
     display: flex;
     justify-content: space-between;
+    font-size:calc(calc(var(--font-size) * 2 ) - 10%);
+    padding: calc(1em - 15px);
 }
 ul{
     width: 50%;
