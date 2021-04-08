@@ -4,11 +4,13 @@
     --align-text:center;
     --padding:1em;
     --font-size:15px;
+    --image-size:400px;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-rendering: optimizeSpeed;
 }
 body{
     background-color: var(--background);
@@ -18,7 +20,7 @@ body{
 nav{
     display: flex;
     justify-content: space-between;
-    font-size:calc(calc(var(--font-size) * 2 ) - 10%);
+    font-size:calc(var(--font-size) * 2 );
     padding: calc(1em - 15px);
 }
 ul{
@@ -26,14 +28,29 @@ ul{
     list-style: none;
     display: flex;
     justify-content: space-around;
+    font-size: calc(var(--font-size) * 1.5);
 }
 a{
     text-decoration: none;
     color: var(--font-color)
 }
+a:hover{
+border-bottom: 1px solid red;
+color: grey;
+}
 header{
-    background-image: url(../images/snowy-vin-Yv6C7JssT5M-unsplash.jpg);
-    padding-bottom: calc(var(--padding) * 25);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/snowy-vin-Yv6C7JssT5M-unsplash.jpg);
+    padding-bottom: calc(var(--padding) * 20);
     background-size: cover;
     
+}
+header img{
+    width: var(--image-size);
+    float: right;
+    margin-right: 5%;
+    box-shadow: 0 1px 5px rgba(126, 126, 126, 0.534);
+    
+}
+.cover{
+    text-align: left;
 }
