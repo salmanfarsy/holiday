@@ -90,3 +90,35 @@ header img{
 .cover a:active{
     background-color: blue
 }
+#destinations{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(2, 2, 88, 0.486);
+    padding: 30px;
+}
+.card{
+    margin: 30px;
+    width: 22%;
+    position: relative;
+}
+ .card img{
+     width: 100%;
+     height: 200px;
+ }
+
+ .overlay{
+     position: absolute;
+     bottom: 0;
+     right: 0;
+     left: 100%;
+     background: rgba(0, 110, 255, 0.479);
+     overflow: hidden;
+     height: 100%;
+     transition: 0.5s ease;
+     display: flex;
+     align-items: center;
+ }
+ .card:hover .overlay{
+     left: 0;
+ }
