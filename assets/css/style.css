@@ -91,16 +91,23 @@ header img{
     background-color: blue
 }
 #destinations{
+    background: rgba(2, 2, 88, 0.486);
+}
+#destinations h1{
+    display: inline-block;
+    border-bottom: white 1px solid;
+    margin-top: 1%;
+}
+#destinations .container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: rgba(2, 2, 88, 0.486);
-    padding: 30px;
 }
 .card{
     margin: 30px;
     width: 22%;
     position: relative;
+    transition: all .5s;
 }
  .card img{
      width: 100%;
@@ -121,4 +128,9 @@ header img{
  }
  .card:hover .overlay{
      left: 0;
+ }
+ .card:hover{
+     transform: scale(1.5);
+     z-index: 10;
+     cursor: pointer;
  }
