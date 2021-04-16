@@ -151,22 +151,28 @@ header img{
     margin: 20px auto;
 }
 
-#features{
+.features{
     display: flex;
     flex-wrap: wrap;
     padding: calc(var(--padding) * 2);
     justify-content: center;
 }
 
-#features article{
+.features article{
     padding: var(--padding);
     line-height: calc(var(--font-size) + 10px);
     flex-basis: 30%;
 }
 
-#features h2{
-    border-bottom: 1px solid white;
+.features h2{
+    border-bottom: 1px solid gold;
     width: fit-content;
     margin: 5px auto ;
 
+}
+#features h1{
+    font-size: calc(var(--font-size) + 20px);
+    border-bottom: 2px solid gold;
+    display: inline-block;
+    padding-top: 10px;
 }
