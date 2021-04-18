@@ -180,16 +180,23 @@ header img{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
+    /* gap: 10px; */
 }
 #book ul {
     display: block;
     width: 100%;
 }
 #book .card{
-    margin: 5px;
-    width: 100%;
+    margin: 50px;
+    width: 50%;
     padding: 0;
+    background-color: #361356;
+    border-radius: 10px;
 }
 #book .card{
     transform: scale(1);
+}
+#book{
+    background-color: #1430549f;
+    
 }
