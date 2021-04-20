@@ -192,11 +192,61 @@ header img{
     padding: 0;
     background-color: #361356;
     border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
 }
-#book .card{
-    transform: scale(1);
+#book .card:hover{
+    transform: scale(1.1);
 }
 #book{
     background-color: #1430549f;
     
+}
+#book ul{
+    border-bottom: none;
+}
+
+#book .card > *, #book ul li{
+    border-bottom: 2px solid white;
+    display: block;
+}
+#book ul li{
+    padding: 0.5em;
+}
+#book button{
+    display: inline-block;
+    font-size: 1.5em;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px auto;
+    background-color: #FFDDAA;
+    box-shadow: 0 6px 4px rgba(128, 128, 128, 0.466);
+    position: relative;
+    
+
+}
+#book button:hover{
+    background-color: #D4AA6A;
+    cursor: pointer;
+    top: 2px;
+    box-shadow: 0 3px 4px rgba(128, 128, 128, 0.466);
+}
+#book button:active{
+    background-color: #553300;
+    top: 4px;
+    box-shadow: none;
+}
+#book h1{
+    border-bottom: 3px solid white;
+    display: inline-block;
+    font-size: 2em;
+}
+#review{
+    display: grid;
+    place-items: center;
+    background-color: #09093b3f;
+}
+.review{
+    max-width:20vw ;
+    margin: 10px ;
+    border-radius: 60%;
 }
