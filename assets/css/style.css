@@ -3,7 +3,7 @@
     --font-color: white;
     --align-text:center;
     --padding:1em;
-    --font-size:15px;
+    --font-size:1rem;
     --image-size:400px;
 }
 *{
@@ -12,6 +12,8 @@
     box-sizing: border-box;
     text-rendering: optimizeSpeed;
     font-family: sans-serif;
+    vertical-align: middle;
+
 }
 body{
     background-color: var(--background);
@@ -248,11 +250,20 @@ header img{
     display: grid;
     place-items: center;
     background-color: 	#152238;
+    padding: 20px;
+  
+}
+#review h1{
+    border-bottom: 3px white solid;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-size: 2rem;
 }
 .review{
     max-width:20vw ;
     margin: 10px ;
     border-radius: 100%;
+  
 }
 .loader{
     background-color: black;
@@ -297,5 +308,61 @@ body{
     }
     100%{
         opacity: 100%;
+    }
+}
+:is(#review) span:not(#name){
+    color: orange;
+    border:2px orange solid;
+    padding: 10px 20px;
+    font-size: 2rem;
+    
+}
+:is(#review) span:hover:not(#name){
+    background-color: orange;
+    cursor: pointer;
+    color: skyblue;
+}
+#review div{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#review q {
+    width: 80%;
+padding: 30px;
+line-height: 30px;
+word-spacing: 3px;
+letter-spacing: 2px;
+font-size: 1.5rem;
+}
+#review h2{
+    font-size: 2rem;
+}
+.ani{
+    animation: slide 1s  ;
+}
+.ani0{
+    animation: slide0 1s ;
+}
+
+@keyframes slide{
+    from{
+        opacity: 0;
+        filter: grayscale(100%);
+    }
+    to{
+        opacity: 100%;
+        filter: grayscale(100%);
+    }
+}
+@keyframes slide0{
+    from{
+        opacity: 0;
+        filter: grayscale(100%);
+    }
+    to{
+        opacity: 100%;
+        filter: grayscale(100%);
     }
 }

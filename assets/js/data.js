@@ -22,6 +22,7 @@ const quote = document.querySelector('#quote');
 const nxtBtn = document.querySelector('#next');
 const prvBtn = document.querySelector('#prev');
 const name = document.querySelector('#name');
+const aside = document.querySelector('aside');
 
 let num = 0;
 
@@ -34,6 +35,8 @@ function frwd() {
     image.src = slide.img;
     quote.textContent = slide.text;
     name.textContent = slide.name;
+    image.classList.toggle('ani');
+    image.classList.toggle('ani0');
 
     num++;
     if(num>2){
