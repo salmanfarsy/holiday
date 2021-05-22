@@ -323,13 +323,14 @@ body{
     color: skyblue;
 }
 #review div{
+    margin: 10px auto;
     width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 #review q {
-    width: 80%;
+    width: 60%;
 padding: 30px;
 line-height: 30px;
 word-spacing: 3px;
