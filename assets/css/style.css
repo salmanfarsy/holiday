@@ -205,6 +205,7 @@ header img{
 }
 #book{
     background-color: #1430549f;
+    width: 100%;
     
 }
 #book ul{
@@ -366,4 +367,111 @@ font-size: 1.5rem;
         opacity: 100%;
         filter: grayscale(100%);
     }
+}
+#contact{
+    font-size: 1.5rem;
+    padding: 40px;
+}
+#contact h1{
+    display: inline-block;
+    border-bottom: 1px solid gold;
+    margin-bottom: 20px;
+}
+#contact div>*{
+margin: 10px auto;
+}
+input{
+    width: 50vw;
+    padding: 1.5rem;
+}
+form>*{
+    margin: 10px auto;
+}
+form button{
+    display: block;
+    margin: 10px auto;
+    font-size: 1.5rem;
+    padding: 10px;
+    background-color: #339DFF;
+    color: white;
+    border-radius: 10px;
+}
+form button:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+footer{
+    background-color: rgb(22, 22, 22);
+    padding: 20px;
+    color: gray;
+}
+footer div{
+    font-size: 0.8rem;
+}
+footer ul{
+    font-size: 0.9rem;
+    display: block;
+}
+footer ul li{
+    display: block;
+    margin: 10px auto;
+    
+}
+footer ul li a{
+    color: gray;
+}
+footer ul li a:hover{
+    color: white;
+}
+.foot{
+    display: flex;
+    justify-content: space-around;
+}
+input::placeholder{
+    font-size: 2rem;
+    text-align: center;
+   color:rgba(0, 0, 0, 0.432);
+}
+input:focus{
+    outline-color:red;
+}
+.icon{
+	height: 50px;
+    display: none;
+    flex-wrap: wrap;
+    width: 60px;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+	
+
+
+}
+.icon span{
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+	padding: 1px 10px;
+	margin: 3px;
+	display:block;
+	border-radius: 10px;
+
+
+}
+.scroll
+{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.drop{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: black;
+    width: auto;
+    justify-self:flex-end;
+}
+.drop li{
+   margin: 30px 0;
+  
 }

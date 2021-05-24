@@ -1,0 +1,11 @@
+@media screen and (max-width: 1200px){
+    .nav{
+        display: none;
+    }
+    .icon{
+        display: flex;
+    }
+}
+@media screen and (max-width: 760px){
+    
+}
