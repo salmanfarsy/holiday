@@ -195,7 +195,7 @@ header img{
 #book .card{
     margin: 50px;
     width: 50%;
-    padding: 0;
+    padding: 10px 20px;
     background-color: #361356;
     border-radius: 10px;
     box-shadow: 5px 5px 5px black;
@@ -442,9 +442,12 @@ input:focus{
     width: 60px;
     border: 1px solid rgb(255, 255, 255);
     padding: 5px;
-	
+    transition: all 1s;	
 
 
+}
+.icon:hover{
+    cursor: pointer;
 }
 .icon span{
 	width: 100%;
@@ -463,15 +466,31 @@ input:focus{
     width: 100%;
     z-index: 10;
 }
-.drop{
+.scroll .nav.drop{
+    background-color: black;
+}
+.nav{
+   transition: height 1s;
+}
+.nav.drop{
+    height: 362px;
+    position: fixed;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.486);
     width: auto;
-    justify-self:flex-end;
+    right: 10px;
+    top:10%;
+    margin-top: 10px;
+   
 }
 .drop li{
-   margin: 30px 0;
+    height: 100%;
+   margin:0;
+   padding: 20px;
+   border-bottom: 2px solid gray;
   
+}
+.rotate{
+    transform: rotate(90deg);
 }

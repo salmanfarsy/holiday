@@ -16,3 +16,11 @@ function sticky(){
 }
 
 const menu = document.querySelector('.icon');
+const ul =  document.querySelector('.nav');
+menu.addEventListener('click', drop);
+
+function drop(){
+  menu.classList.toggle('rotate');
+ ul.classList.toggle('drop');
+}
+
