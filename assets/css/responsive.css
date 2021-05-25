@@ -2,6 +2,8 @@
     .nav{
         overflow: hidden;
         height: 0;
+        position: absolute;
+        color: transparent;
     }
     .icon{
         display: flex;

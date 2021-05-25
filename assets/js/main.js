@@ -19,8 +19,13 @@ const menu = document.querySelector('.icon');
 const ul =  document.querySelector('.nav');
 menu.addEventListener('click', drop);
 
-function drop(){
+function drop(e){
+    e.stopPropagation();
   menu.classList.toggle('rotate');
  ul.classList.toggle('drop');
 }
+window.addEventListener('click', ()=>{
+    menu.classList.remove('rotate');
+    ul.classList.remove('drop');  
+})
 
