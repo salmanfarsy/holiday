@@ -94,6 +94,7 @@ header img{
 }
 #destinations{
     background:linear-gradient(to bottom, rgba(1, 7, 20, 0.438), 	#152238) ;
+    padding: 10px;
 }
 #destinations h1{
     display: inline-block;
@@ -193,11 +194,11 @@ header img{
     width: 100%;
 }
 #book .card{
-    margin: 50px;
     width: 20%;
     background-color: #361356;
     border-radius: 10px;
     box-shadow: 5px 5px 5px black;
+    text-align: left;
 }
 #book .card:hover{
     transform: scale(1.1);
@@ -246,6 +247,10 @@ header img{
     border-bottom: 3px solid white;
     display: inline-block;
     font-size: 2em;
+    text-align: center;
+}
+#book p{
+    text-align: center;
 }
 #review{
     display: grid;
@@ -316,6 +321,7 @@ body{
     border:2px orange solid;
     padding: 10px 20px;
     font-size: 2rem;
+    border-radius: 15px;
     
 }
 :is(#review) span:hover:not(#name){
@@ -472,10 +478,9 @@ input:focus{
 .scroll .nav.drop{
     background-color: black;
 }
-.nav{
-   transition: height 1s;
-}
+
 .nav.drop{
+    transition: height 1s;
     height: 362px;
     position: fixed;
     display: flex;

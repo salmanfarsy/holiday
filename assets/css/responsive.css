@@ -3,10 +3,14 @@
         overflow: hidden;
         height: 0;
         position: absolute;
-        color: transparent;
     }
     .icon{
         display: flex;
+        height: 45px;
+        width: 50px;
+    }
+    html, body{
+        font-size: 12px;
     }
 }
 @media screen and (max-width: 760px){
@@ -18,4 +22,82 @@
     font-size: 10px;
     padding: 20px;
  }   
+ .icon{
+    height: 45px;
+    width: 50px;
+}
+html, body{
+    font-size: 10px;
+ --image-size:40vw;
+}
+}
+@media screen and (max-width: 520px){
+    .card{
+        width: 50%;
+    }
+    .quote a{
+        padding: 5px;
+        width: 100%;
+    }
+    .features article{
+        flex-basis: 100%;
+        font-size: 1.5rem;
+    }
+    #book .card{
+        width: 50%;
+    }
+    :is(#review) span:not(#name){
+        color: orange;
+    border: 2px orange solid;
+    padding: 5px 10px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    }
+    input{
+        width: 100%;
+    padding: 1rem;
+    }
+    #review q{
+        width: 60%;
+        padding: 0px;
+        line-height: 20px;
+        word-spacing: 3px;
+        letter-spacing: 0px;
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 300px){
+    .card{
+        width: 100%;
+    }
+    .card:hover{
+        transform: scale(1.1);
+    }
+    #book .card{
+        width: 100%;
+    }
+    :is(#review) span:not(#name){
+        font-size: 10px;
+        padding: 5px;
+        border-width: 1px;
+    }
+    .icon{
+        height: 100%;
+        width: 16%;
+    }
+    header img{
+        width: 100%;
+        float: none;
+    }
+    .cover{
+        text-align: center;
+    }
+    .cover p{
+        font-size: 1rem;
+    font-weight: 0;
+    margin-right: 0;
+    line-height: 1.5em;
+    letter-spacing: 0px;
+     word-spacing: 0px;
+    }
 }
